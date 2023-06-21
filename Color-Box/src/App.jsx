@@ -6,8 +6,8 @@ import Box from "./Box.jsx";
 function App() {
     const [color, setColor] = useState("#f06d06")
 
-    const handleColorChange = (newColor) => {
-        setColor(newColor)
+    const handleColorChange = (e) => {
+        setColor(e.target.value)
     };
     return (
         <div className="colorBox">
